@@ -1,0 +1,146 @@
+[AED 2023/1]-ALGORITMOS E ESTRUTURAS DE DADOS (2D7+2F7)
+Mural
+Atividades
+Pessoas
+Todos os temas
+Materiais das Aulas
+Exercícios
+Atividade Avaliativa
+Código Laboratório
+Materiais das Aulas
+Materiais das Aulas
+Material
+Slide 5
+Item postado em 8 de mar.
+Material
+Slide 4
+Item postado em 6 de mar.
+Material
+Slides 3
+Item postado em 1 de mar.
+Material
+Slides 2
+Item postado em 13 de fev.
+Material
+SLIDES 1
+Item postado em 6 de fev.
+Material
+Guia (Syntax Reference) C# Inglês
+Item postado em 9 de fev.
+Exercícios
+Exercícios
+Material
+E-mail do Monitor
+Item postado em 8 de mar.
+Atividade
+Exercício Classe
+Sem data de entrega
+Atividade Avaliativa
+Atividade Avaliativa
+Atividade
+Atividade 5 AED1
+Data de entrega: 23:59
+Atividade
+Atividade 4 AED1
+Data de entrega: 23:59
+Atividade
+Atividade 3 AED1
+Data de entrega: 23:59
+Concluída Atividade
+Atividade 2
+Data de entrega: 5 de mar.
+Concluída Atividade
+Atividade 1 AED1
+Data de entrega: 19 de fev.
+Código Laboratório
+Código Laboratório
+Material
+Código 8
+Item postado em 12 de mar.
+Material
+Código 7
+Item postado em 12 de mar.
+Material
+Código 6
+Item postado em 12 de mar.
+Material
+Código 5
+Item postado em 12 de mar.
+Calcular a área de dois triângulos e definir qual tem a maior área.
+
+Codigo_9_AED1.txt
+Texto
+Material
+Código Atividade 2.4
+Item postado em 6 de mar.
+Material
+Código Atividade 2.3
+Item postado em 6 de mar.
+Material
+Código Atividade 2.2
+Item postado em 6 de mar.
+Material
+Código Atividade 2.1
+Item postado em 6 de mar.
+Material
+Código 4
+Item postado em 27 de fev.
+Material
+Código 3
+Item postado em 27 de fev.
+Atividade Código 5 expandida
+using System;
+using System.Globalization;
+namespace PrimeiroProjeto
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //Calcular a area de 2 triangulos e exibir o que tem maior area
+
+            //criando as variaveis dos triangulos
+            double xA, xB, xC, yA, yB, yC;
+
+            //Primeiro Triangulo X
+            Console.WriteLine("Entre com as medidas do triângulo X:");
+            xA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            xB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            xC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            //Segundo traingulo Y
+            Console.WriteLine("Entre com as medidas do triângulo Y:");
+            yA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            yC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            //Calculando area do traingulo x
+            double p = (xA + xB + xC) / 2.0;
+            double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
+
+            //calculando a area do triangulo y
+            p = (yA + yB + yC) / 2.0;
+            double areaY = Math.Sqrt(p * (p - yA) * (p - yB) * (p - yC));
+
+            //Exibindo os resultados das areas
+            Console.WriteLine("Área de X = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
+            Console.WriteLine("Área de Y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
+
+            //testando quem tem a maior area.
+            if (areaX > areaY)
+            {
+                Console.WriteLine("Maior área: X");
+            }
+            else
+            {
+                Console.WriteLine("Maior área: Y");
+
+            }
+
+
+        }
+    }
+}
+Codigo_9_AED1.txt
+Exibindo Codigo_9_AED1.txt…
