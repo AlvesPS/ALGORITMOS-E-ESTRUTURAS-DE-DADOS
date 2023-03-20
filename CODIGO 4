@@ -1,0 +1,43 @@
+using System;
+using System.Globalization;
+namespace PrimeiroProjeto
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double soma;
+
+            //Comando para input de dados Double com ponto (CultureInfo.InvariantCulture) e duas casas decimais (F2)
+            Console.WriteLine("Digite a primeira Nota:");
+            double n1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Você digitou:");
+            Console.WriteLine(n1.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine();
+
+            //Comando para input de dados Double com ponto (CultureInfo.InvariantCulture) e duas casas decimais (F2)
+            Console.WriteLine("Digite a segunda nota:");
+            double n2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Você digitou:");
+            Console.WriteLine(n2.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine();
+
+            soma = n1 + n2;
+
+            //Imprimindo com apenas uma casa depois do ponto: F1
+            Console.WriteLine("A nota total do aluno/aluna é : " + soma.ToString("F1", CultureInfo.InvariantCulture));
+            Console.WriteLine();
+
+            if (soma < 60)
+            {
+                Console.WriteLine("Aluno/aluna Reprovado(a)");
+            }
+            else
+            {
+                Console.WriteLine("Aluno/aluna Aprovado(a");
+            }
+
+        }
+    }
+}
